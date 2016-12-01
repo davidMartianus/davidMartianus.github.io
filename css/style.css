@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700');
+/*--------Global Variable-------*/
+/*--------Global Style-------*/
+*{
+  box-sizing: border-box;
+}
+
+body {
+  display: none;
+  font-family: 'Fredoka One',cursive; 
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  width: 100%;
+}
+.wrap-fluid {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.button{
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: .6rem 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-highlight{
+  background: #527ac5;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-1{
+  width: 8.33%;
+}
+.col-2{
+  width: 8.33%;
+}
+.col-3{
+  width: 25%;
+}
+.col-4{
+  width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/*-------Banner Style-------*/
+#banner:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../img/Coding.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  filter: brightness(20%);
+}
+#banner{
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+#banner header {
+   padding: 2rem 0; 
+}
+#banner #logo {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2rem;
+  float: left;
+  padding-left: 50px;
+  margin: -15px 0 -5px 0; 
+  font-family: 'Lobster',cursive;
+}
+#inverse-logo{
+  color: #1f1f1f;
+  font-weight: 700;
+  font-size: 2rem;
+  float: left;
+  padding-left: 50px;
+  margin: -15px 0 -5px 0; 
+  font-family: 'Lobster',cursive;
+}
+.navbar{
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  background: transparent;
+  box-shadow: 0px 0px 0px -5px #b3b3b3;
+  -webkit-transition: background-color .5s linear;
+  -moz-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.visible{
+  box-shadow: 0px 0px 25px -5px #333;
+  background: #ffffff;
+  margin: 0 auto;
+}
+.navbar nav {
+  float: right; 
+  padding-right: 50px;
+}
+.navbar nav a {
+  color: #ffffff;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-left: 2rem; 
+  font-family: 'Lato', sans-serif;
+  filter: drop-shadow(50px);
+}
+.inverse-navbar {
+  color: #1f1f1f;
+  font-weight: 550;
+  text-decoration: none;
+  margin-left: 2rem; 
+  font-family: 'Lato', sans-serif;
+  filter: drop-shadow(50px);
+}
+#banner .content {
+  padding: 15rem 0 6rem 0; 
+}
+#banner .content p{
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Lato',sans-serif;
+  margin: 5px;
+}
+#banner .content .title, #banner .content .sub_title {
+  color: #ffffff;
+  text-align: center; 
+}
+#banner .content .title {
+  font-size: 3.5rem;
+  margin: 0; 
+}
+#banner .content .sub_title{
+  font-weight: 300;
+  font-size: 1.35rem;
+  width: 500px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.75;
+}
+.button_wrap{
+  text-align: center;
+  margin: 3rem 0;
+}
+.button_wrap a{
+  font-family: 'Lato', sans-serif; 
+}
+
+/*--------Services---------*/
+#services{
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 80%;
+  background: #ffffff;
+  padding-top: 20px;
+  z-index: 1;
+  overflow: hidden;
+}
+#services #whi{
+  text-align: center;
+  font-size: 2.5rem;
+}
+#services .service{
+  width: 31%;
+  float: left;
+  text-align: center;
+  position: relative;
+  margin: -3rem 1% 0 1%;
+  padding: 3rem 2.5%;
+}
+#services .service h3{
+  font-size: 1.35rem;
+  font-weight: 200;
+}
+#services.service p{
+  font-family: 'Lato',sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+}
+.services-icon{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  background: transparent url(../img/idea.png) no-repeat;
+  background-position: left top;
+}
+.services-icon.idevelop{
+  background-position: -140px top;
+}
+.services-icon.idesign{
+  background-position: -270px top;
+}
+
+/*-----About Me-------*/
+#about{
+  position: absolute;
+  top: 180%;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  padding-top: 20px;
+  z-index: 5;
+}
+#about #whi{
+  text-align: center;
+  font-size: 2.5rem;
+}
+#about p{
+  margin-top: 10px;
+}
+#about img{
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 65%;
+  height: 95%;
+}
+/*# sourceMappingURL=style.css.map */
