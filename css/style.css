@@ -106,7 +106,8 @@ body {
   position: relative;
   left: 0;
   right: 0;
-  margin: 0;
+  margin: 0 auto;
+  height: 100%;
 }
 #banner header {
    padding: 2rem 0; 
@@ -125,7 +126,7 @@ body {
   font-size: 2rem;
   float: left;
   
-  margin: -15px 0 -5px 0; 
+  margin: -15px 0 -5px 50px; 
   font-family: 'Lobster',cursive;
 }
 .navbar{
@@ -332,7 +333,28 @@ body {
 
 /*--------Media Query Phone---------*/
 @media (min-width: 341px) and (max-width: 414px){
-    .navbar nav {
+  #banner:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url(../img/Coding.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(20%);
+}
+#banner{
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0;
+  height: 100%;
+}
+  .navbar nav {
       float: left;
       padding-right: 50px;
       display: none;
@@ -520,6 +542,13 @@ body {
 
 /*----Media Query 340px--------*/
 @media only screen and (max-width: 340px){
+  #banner{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100%;
+  }  
     .navbar nav {
       float: right; 
       padding-right: 50px;
