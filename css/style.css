@@ -380,7 +380,8 @@ body {
   #banner .content {
     padding-top: 8rem;
     padding-left: 1rem;
-    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0 !important;
   }
   #banner .content p{
     text-align: center;
