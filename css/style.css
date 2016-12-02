@@ -355,7 +355,6 @@ body {
   -o-transition-property: background-position;
 }
 #banner{
-  position: relative;
   left: 0;
   right: 0;
   margin: 0;
