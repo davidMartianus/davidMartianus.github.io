@@ -346,6 +346,14 @@ body {
   width: 100%;
   height: 100%;
   filter: brightness(20%);
+  transition: .15s ease-in-out;
+  -webkit-transition: .15s ease-in-out;
+  -moz-transition: .15s ease-in-out;
+  -o-transition: .15s ease-in-out;
+  transition-property: background-position;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -o-transition-property: background-position;
 }
 #banner{
   position: relative;
