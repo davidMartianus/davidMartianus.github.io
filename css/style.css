@@ -405,8 +405,7 @@ body {
   }
 /*------Services------*/
   #services{
-    position: relative;
-    
+    position: relative;    
     width: 100%;
     height: auto;
     margin-top: 0;
@@ -417,6 +416,7 @@ body {
   #services #whi{
     text-align: center;
     font-size: 1.5rem;
+    position: inherit;
   }
   #services .service{
     width: 100%;
