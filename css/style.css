@@ -16,6 +16,7 @@ body {
 
 .wrap {
   width: 100%;
+  height: 100%;
 }
 .wrap-fluid {
   width: 1440px;
@@ -420,14 +421,15 @@ body {
     text-align: center;
     font-size: 1.5rem;
     position: inherit;
+    margin: 0;
   }
   #services .service{
     width: 100%;
     float: left;
     text-align: center;
     position: relative;
-    margin: -3rem 0 0 1%;
-    padding: 3rem 2.5%;
+    margin: 1.5rem 1%;
+    padding:0 2.5%;
   }
   #services .service h3{
     font-size: 1.05rem;
@@ -456,7 +458,7 @@ body {
   #about{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     background: #eee;
     padding-top: 1.25em;
     margin-top: 0; 
@@ -465,9 +467,10 @@ body {
   #about #abt{
     text-align: center;
     font-size: 1.5rem;
+    margin: 0;
   }
   #about p{
-    margin: 10px 10px auto ;
+    margin: 10px 10px;
     padding-left: 0 !important;
     text-align: justify;
     font-size: .9rem;
@@ -489,19 +492,19 @@ body {
 
   /*-------Portofolio---------*/
   #portofolio{
-    position: absolute;
-    top: 240%;
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     background: #fff;
-    margin-top: 100%;
+    margin-top: 0;
     padding-top: 1.25em;
     z-index: 1;
-    display: none;
+    
   }
   #portofolio #prt{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    margin: 0;
   }
   .imageport{
     background: #eee;
@@ -513,30 +516,38 @@ body {
     position: relative; 
     display: block;
     margin: auto;
+    width: 100%;
+    height: auto;
   }
   .judulport h3{
     display: block;
     padding: 1%;
     margin: 0 auto;
     text-align: center;
+    font-size: .5rem;
   }
   .judulport h5{
     display: block;
     padding: 1%;
     margin:0 auto;
     text-align: center;
+    font-size: .4rem;
   }
 
   /*---------Contact---------*/
   #contact{
-    position: absolute;
-    top: 330%;
+    position: relative;
     width: 100%;
     height: 100%;
     z-index: 1;
-    padding-top: .5em;
+    padding-top: 1.25em;
     background: #eee;
-    display: none;
+    
+  }
+  #cnt{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
   }
 }
 
