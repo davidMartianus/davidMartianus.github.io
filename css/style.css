@@ -806,7 +806,7 @@ body {
 }
 
 /*----Media Query 375px--------*/
-@media only screen and (max-width: 375px){
+@media (max-width: 375px){
   #banner:before {
     content: "";
     position: fixed;
