@@ -313,7 +313,7 @@ body {
   position: relative; 
   display: flex;
   margin: 0;
-  height: auto; 
+  height: 100%; 
   width: auto; 
   max-width: 400px; 
   max-height: 300px;
@@ -515,8 +515,7 @@ body {
     background: #fff;
     margin-top: 0;
     padding: 1.25em;
-    z-index: 1;
-    
+    z-index: 1;   
   }
   #portofolio #prt{
     text-align: center;
@@ -524,15 +523,22 @@ body {
     margin: 0;
   }
   .imageport{
-    background: #eee;
+    background: #fdfdfd;
     padding-top: 2%;
-    margin: 2.47% 10%;
-    box-shadow: 0px 0px 10px -3px #333;
+    margin: 1% .5%;
+    box-shadow: 0px 0px 7px -1px #dcdcdc;
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    overflow: hidden;
   }
   #portofolio .imageport img{
     position: relative; 
-    display: block;
-    width: auto; 
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: auto; 
     max-width: 400px; 
     max-height: 300px;
     text-align: center;
@@ -752,7 +758,7 @@ body {
     padding-top: 2%;
     margin: 1% .5%;
     box-shadow: 0px 0px 7px -1px #dcdcdc;
-    width: 24%;
+    width: 100%;
     display: inline-block;
     text-align: center;
     float: left;
@@ -760,9 +766,9 @@ body {
   }
   #portofolio .imageport img{
     position: relative; 
-    display: block;
+    display: flex;
     margin: 0;
-    width: auto;
+    width: 100%;
     height: auto;
     max-width: 400px;
     max-height: 300px;
@@ -979,7 +985,7 @@ body {
     padding-top: 2%;
     margin: 1% .5%;
     box-shadow: 0px 0px 7px -1px #dcdcdc;
-    width: 24%;
+    width: 100%;
     display: inline-block;
     text-align: center;
     float: left;
@@ -987,9 +993,9 @@ body {
   }
   #portofolio .imageport img{
     position: relative; 
-    display: block;
+    display: flex;
     margin: 0;
-    width: auto;
+    width: 100%;
     height: auto;
     max-width: 400px;
     min-height: 300px;
