@@ -532,9 +532,10 @@ body {
   #portofolio .imageport img{
     position: relative; 
     display: block;
-    margin: auto;
-    width: 100%;
-    height: auto;
+    width: auto; 
+    max-width: 400px; 
+    max-height: 300px;
+    text-align: center;
   }
   .judulport h3{
     display: block;
@@ -747,17 +748,24 @@ body {
     margin: 0;
   }
   .imageport{
-    background: #eee;
+    background: #fdfdfd;
     padding-top: 2%;
-    margin: 2.47% 10%;
-    box-shadow: 0px 0px 10px -3px #333;
+    margin: 1% .5%;
+    box-shadow: 0px 0px 7px -1px #dcdcdc;
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    overflow: hidden;
   }
   #portofolio .imageport img{
     position: relative; 
     display: block;
-    margin: auto;
-    width: 100%;
+    margin: 0;
+    width: auto;
     height: auto;
+    max-width: 400px;
+    max-height: 300px;
   }
   .judulport h3{
     display: block;
@@ -967,16 +975,24 @@ body {
     margin: 0;
   }
   .imageport{
-    background: #eee;
+    background: #fdfdfd;
     padding-top: 2%;
-    margin: 2.47% 10%;
-    box-shadow: 0px 0px 10px -3px #333;
+    margin: 1% .5%;
+    box-shadow: 0px 0px 7px -1px #dcdcdc;
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    overflow: hidden;
   }
   #portofolio .imageport img{
     position: relative; 
     display: block;
-    margin: auto;
-    width: 100%;
+    margin: 0;
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    min-height: 300px;
   }
   .judulport h3{
     display: block;
