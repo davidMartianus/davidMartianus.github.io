@@ -384,6 +384,7 @@ body {
       margin: -15px 45% -5px 30%;
       vertical-align: middle;
       font-family: 'Lobster',cursive;
+      display: none;
   }
     #inverse-logo{
       color: #1f1f1f;
@@ -614,6 +615,7 @@ body {
       text-align: center;
       margin: -15px 15% -5px 25%;
       font-family: 'Lobster',cursive;
+      display: none;
   }
     #inverse-logo{
       color: #1f1f1f;
@@ -841,6 +843,7 @@ body {
       text-align: center;
       margin: -15px 15% -5px 20%;
       font-family: 'Lobster',cursive;
+      display: none;
   }
     #inverse-logo{
       color: #1f1f1f;
