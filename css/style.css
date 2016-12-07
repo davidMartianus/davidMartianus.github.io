@@ -108,10 +108,10 @@ body {
   left: 0;
   right: 0;
   margin: 0 auto;
-  height: 100%;
+  height: 100vh;
 }
 #banner header {
-   padding: 2rem 0; 
+   padding: 2rem 0;
 }
 #banner #logo {
   color: #ffffff;
@@ -126,7 +126,6 @@ body {
   font-weight: 700;
   font-size: 2rem;
   float: left;
-  
   margin: -15px 0 -5px 50px; 
   font-family: 'Lobster',cursive;
 }
@@ -162,6 +161,13 @@ body {
   margin-left: 2rem; 
   font-family: 'Lato', sans-serif;
   filter: drop-shadow(50px);
+  transition: all .2s ease;
+}
+.navbar nav a:hover{
+  color: #4e7398;
+}
+a.active{
+  border-bottom: 3px solid #4e7398;
 }
 .inverse-navbar {
   color: #1f1f1f;
@@ -346,54 +352,326 @@ body {
 }
 
 
-/*--------Media Query Bigger Phone---------*/
-@media (min-width: 428px) and (max-width: 470px){
-#banner:before {
-  content: "";
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  display: block;
-  background-image: url(../img/Coding.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  filter: brightness(20%);
-  
-}
-#banner{
-  left: 0;
-  right: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
+/*--------Media Query Tablet---------*/
+@media (max-width: 860px){
+  #banner:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url(../img/Coding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(20%);
+  }
+  #banner{
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 100vh;
+  }
+  #banner header{
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner .content {
+    padding: 15rem 0 6rem 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .navbar nav {
       float: left;
-      padding-right: 50px;
-      display: none;
-      position: fixed;
+      padding: 0
+  }
+  .navbar nav a:first-child{
+    margin-left: 0 !important;
+  }
+  .navbar nav a {
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-left: 2rem; 
+    font-family: 'Lato', sans-serif;
+    filter: drop-shadow(50px);
+    font-size: .8em;
   }
     #banner #logo {
       color: #ffffff;
       font-weight: 700;
-      font-size: 2rem;      
-      text-align: center !important;
-      margin: -15px 45% -5px 30%;
-      vertical-align: middle;
+      font-size: 1.8rem;      
       font-family: 'Lobster',cursive;
-      display: none;
+      margin-left: 0 !important;
+      margin-bottom: .5%;
   }
     #inverse-logo{
       color: #1f1f1f;
       font-weight: 700;
-      font-size: 2rem;
-      text-align: center;
-      display: block;
-      margin: -15px 45% -5px 30%; 
+      font-size: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0!important; 
       font-family: 'Lobster',cursive;
+      margin-bottom: .5%;
+  }
+  #banner .content {
+    padding-top: 12rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner .content p{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Lato',sans-serif;
+    margin: 5px auto;
+    width: auto;
+    font-size: 1rem;
+    word-wrap: break-word;
+  }
+  #banner .content .title, #banner .content .sub_title {
+    color: #ffffff;
+    text-align: center; 
+  }
+  #banner .content .title {
+    font-size: 3rem;
+    margin: 0; 
+  }
+  #banner .content .sub_title{
+    font-weight: 300;
+    font-size: 1.05rem;
+    width: auto;
+    margin: 0 auto 2rem auto;
+    line-height: 1.75;
+  }
+/*------Services------*/
+  #services{
+    position: relative;    
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    background: #ffffff;
+    padding: 1.25em 0;
+    z-index: 1;
+  }
+  #services #whi{
+    text-align: center;
+    font-size: 1.5rem;
+    position: inherit;
+    margin: 0;
+  }
+  #services .service{
+    width: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin: 1.5rem 1%;
+    padding:0 2.5%;
+  }
+  #services .service h3{
+    font-size: 1.05rem;
+    font-weight: 200;
+  }
+  #services .service p{
+    font-family: 'Lato',sans-serif;
+    font-weight: 100;
+    font-size: .9rem;
+  }
+  .services-icon{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    background: transparent url(../img/idea.png) no-repeat;
+    background-position: left top;
+  }
+  .services-icon.idevelop{
+    background-position: -140px top;
+  }
+  .services-icon.idesign{
+    background-position: -270px top;
+  }  
+
+  /*----About-------*/
+  #about{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #eee;
+    padding: 1.25em;
+    margin-top: 0; 
+    z-index: 1;
+  }
+  #about #abt{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  #about p{
+    margin: 10px 10px;
+    padding-left: 0 !important;
+    text-align: justify;
+    font-size: .9rem;
+    font-family: 'Lato',sans-serif;
+  }
+  #about img{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  #desc-about{
+    width: 100%;
+  }
+  .col-4{
+    margin:10px auto;
+  }
+
+  /*-------Portofolio---------*/
+  #portofolio{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 0;
+    padding: 1.25em;
+    z-index: 1;   
+  }
+  #portofolio #prt{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .imageport{
+    background: #fdfdfd;
+    padding-top: 2%;
+    margin: 1% .5%;
+    box-shadow: 0px 0px 7px -1px #dcdcdc;
+    width: 43%;
+    height: auto;
+    display: inline-block;
+    align-items: center;
+    float: left;
+    overflow: hidden;
+  }
+  #portofolio .imageport img{
+    position: relative; 
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: auto; 
+    max-width: 400px; 
+    max-height: 300px;
+  }
+  .judulport h3{
+    display: block;
+    padding: 1%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .judulport h5{
+    display: block;
+    padding: 1%;
+    margin:0 auto;
+    text-align: center;
+    font-size: .7rem;
+  }
+  /*---------Contact---------*/
+  #contact{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 1.25em;
+    background: #eee;    
+  }
+  #cnt{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+
+
+
+/*--------Media Query Bigger Phone---------*/
+@media (min-width: 428px) and (max-width: 767px){
+  #banner:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url(../img/Coding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(20%);
+    
+  }
+  #banner{
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 100vh;
+  }
+  #banner header{
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner .content {
+    padding: 15rem 0 6rem 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar nav {
+    float: left;
+    padding-right: 50px;
+    display: none;
+    position: fixed;
+  }
+  #banner #logo {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.8rem;      
+    font-family: 'Lobster',cursive;
+    margin-left: 0 !important;
+    margin-bottom: .5%;
+    display: none;
+  }
+  #inverse-logo{
+    color: #1f1f1f;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0 !important;
+    margin-bottom: .5%; 
+    font-family: 'Lobster',cursive;
   }
   #banner .content {
     padding-top: 8rem;
@@ -524,39 +802,38 @@ body {
     margin: 0;
   }
   .imageport{
-    background: #fdfdfd;
+    background: transparent;
     padding-top: 2%;
     margin: 1% .5%;
-    box-shadow: 0px 0px 7px -1px #dcdcdc;
-    width: 24%;
-    display: inline-block;
-    text-align: center;
+    box-shadow: none;
+    width: 100%;
+    height: auto;
     float: left;
+    display: inline-block; 
     overflow: hidden;
   }
   #portofolio .imageport img{
     position: relative; 
     display: flex;
-    margin: 0;
-    width: 100%;
-    height: auto; 
-    max-width: 400px; 
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    max-width: 400px;
     max-height: 300px;
-    text-align: center;
   }
   .judulport h3{
     display: block;
     padding: 1%;
     margin: 0 auto;
     text-align: center;
-    font-size: .5rem;
+    font-size: 1rem;
   }
   .judulport h5{
     display: block;
     padding: 1%;
     margin:0 auto;
     text-align: center;
-    font-size: .4rem;
+    font-size: .7rem;
   }
 
   /*---------Contact---------*/
@@ -580,51 +857,59 @@ body {
 
 /*--------Media Query Phone---------*/
 @media (min-width: 376px) and (max-width: 427px){
-#banner:before {
-  content: "";
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  display: block;
-  background-image: url(../img/Coding.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  filter: brightness(20%);
-  
-}
-#banner{
-  left: 0;
-  right: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
+  #banner:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url(../img/Coding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(20%);
+    
+  }
+  #banner{
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 100vh;
+  }
+  #banner header{
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .navbar nav {
-      float: left;
-      padding-right: 50px;
-      display: none;
-      position: fixed;
+    float: left;
+    padding-right: 50px;
+    display: none;
+    position: fixed;
   }
-    #banner #logo {
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 2rem;      
-      text-align: center;
-      margin: -15px 15% -5px 25%;
-      font-family: 'Lobster',cursive;
-      display: none;
+  #banner #logo {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2rem;      
+    text-align: center;
+    margin-left:0;
+    margin-bottom: .5%;
+    font-family: 'Lobster',cursive;
+    display: none;
   }
-    #inverse-logo{
-      color: #1f1f1f;
-      font-weight: 700;
-      font-size: 2rem;
-      text-align: center;
-      display: block;
-      margin: -15px 15% -5px 25%; 
-      font-family: 'Lobster',cursive;
+  #inverse-logo{
+    color: #1f1f1f;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin-left: 0 !important;
+    margin-bottom: .5%; 
+    font-family: 'Lobster',cursive;
   }
   #banner .content {
     padding-top: 8rem;
@@ -646,12 +931,12 @@ body {
     text-align: center; 
   }
   #banner .content .title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 0; 
   }
   #banner .content .sub_title{
     font-weight: 300;
-    font-size: 1.05rem;
+    font-size: 1.3rem;
     width: auto;
     margin: 0 auto 2rem auto;
     line-height: 1.75;
@@ -780,14 +1065,14 @@ body {
     padding: 1%;
     margin: 0 auto;
     text-align: center;
-    font-size: .5rem;
+    font-size: 1rem;
   }
   .judulport h5{
     display: block;
     padding: 1%;
     margin:0 auto;
     text-align: center;
-    font-size: .4rem;
+    font-size: .8rem;
   }
 
   /*---------Contact---------*/
@@ -820,7 +1105,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     filter: brightness(20%);
   }
   #banner{
@@ -828,31 +1113,38 @@ body {
     left: 0;
     right: 0;
     margin: 0 auto;
-    height: 100%;
+    height: 100vh;
   }
-    .navbar nav {
-      float: right; 
-      padding-right: 50px;
-      display: none;
-      position: fixed;
+  #banner header{
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-    #banner #logo {
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 2rem;
-      text-align: center;
-      margin: -15px 15% -5px 20%;
-      font-family: 'Lobster',cursive;
-      display: none;
+  .navbar nav {
+    float: right; 
+    padding-right: 50px;
+    display: none;
+    position: fixed;
   }
-    #inverse-logo{
-      color: #1f1f1f;
-      font-weight: 700;
-      font-size: 2rem;
-      text-align: center;
-      display: block;
-      margin: -15px 15% -5px 20%; 
-      font-family: 'Lobster',cursive;
+  #banner #logo {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 !important;
+    font-family: 'Lobster',cursive;
+    display: none;
+  }
+  #inverse-logo{
+    color: #1f1f1f;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+    margin: 0 !important;
+    font-family: 'Lobster',cursive;
   }
   #banner .content {
     padding-top: 8rem;
@@ -1008,14 +1300,14 @@ body {
     padding: 1%;
     margin: 0 auto;
     text-align: center;
-    font-size: .5rem;
+    font-size: .8rem;
   }
   .judulport h5{
     display: block;
     padding: 1%;
     margin:0 auto;
     text-align: center;
-    font-size: .4rem;
+    font-size: .6rem;
   }
 
   /*---------Contact---------*/
